@@ -64,7 +64,7 @@ public class Bullet extends Sprite {
 		}		
 	}
 	
-	public void setPosition(int m,int n) { //子弹位置随飞机位置改变，所以要随时设置
+	public void setPosition(int m,int n) { //瀛愬脊浣嶇疆闅忛鏈轰綅缃敼鍙橈紝鎵�浠ヨ闅忔椂璁剧疆
 		x = m;
 		y = n;
 	}

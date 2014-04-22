@@ -47,23 +47,3 @@ public class Plane extends Sprite{
 		this.movable = movable;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

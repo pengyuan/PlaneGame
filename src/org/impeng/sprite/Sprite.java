@@ -10,7 +10,7 @@ public class Sprite {
 	Bitmap[] bmpArray;
 	int frame;
 	int x,y;
-	int width,height;  //×ÊÔ´Í¼Æ¬    ÇĞ¸îÖµ (¿í)  ÇĞ¸îÖµ (¸ß)
+	int width,height;  //èµ„æºå›¾ç‰‡    åˆ‡å‰²å€¼ (å®½)  åˆ‡å‰²å€¼ (é«˜)
 
 	public Sprite(Bitmap bmp,int w,int h) {
 		int col = bmp.getWidth() / w;
@@ -46,7 +46,7 @@ public class Sprite {
 		frame = (++frame) % bmpArray.length;
 	}
 	
-	public boolean isCollision(Sprite p) {   //¾ØĞÎÅö×²¼ì²â
+	public boolean isCollision(Sprite p) {   //çŸ©å½¢ç¢°æ’æ£€æµ‹
 		if(p.x < this.x + this.width && p.x + p.width > this.x && p.y < this.y + this.height && p.y + p.height > this.y) {
 			return true;
 		}

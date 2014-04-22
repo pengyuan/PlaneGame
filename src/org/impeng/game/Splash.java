@@ -21,7 +21,7 @@ public class Splash extends SurfaceView implements Runnable ,SurfaceHolder.Callb
 	Bitmap help;
 	Bitmap choose;
 	Intent intent;
-	int gameState;  //×´Ì¬Çý¶¯
+	int gameState;
 	public static final int STARTGAME = 1;
 	public static final int HELP = 2;
 	public static final int OVER = 3;

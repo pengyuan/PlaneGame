@@ -315,7 +315,7 @@ public class GameSurfaceView extends SurfaceView implements Runnable,SurfaceHold
 		Bullet b = null;
 		Enemy n = null;
 		Gift g = null;
-		for(int i = 0; i < pool.bulletList.size(); i++)	{ //player×Óµ¯ÓëenemyµÄÅö×²¼ì²â
+		for(int i = 0; i < pool.bulletList.size(); i++)	{ //playerå­å¼¹ä¸Ženemyçš„ç¢°æ’žæ£€æµ‹
 			b = pool.bulletList.get(i);
 			for(int j = 0; j < enemyArray.size(); j++) {
 				n = enemyArray.get(j);
@@ -329,7 +329,7 @@ public class GameSurfaceView extends SurfaceView implements Runnable,SurfaceHold
 				}
 			}
 		}
-		for(int i = 0; i < enemyArray.size(); i++){  //playerÓëenemyµÄÅö×²¼ì²â
+		for(int i = 0; i < enemyArray.size(); i++){  //playerä¸Ženemyçš„ç¢°æ’žæ£€æµ‹
 			n = enemyArray.get(i);
 			if(player.isCollision(n)) {
 				if(!god_time&&game_state!=GAME_OVER){
@@ -340,7 +340,7 @@ public class GameSurfaceView extends SurfaceView implements Runnable,SurfaceHold
 				break;
 			}
 		}
-		for(int i = 0; i < enemy_pool.bulletList.size(); i++)	{ //playerÓëenemyµÄ×Óµ¯Åö×²¼ì²â
+		for(int i = 0; i < enemy_pool.bulletList.size(); i++)	{ //playerä¸Ženemyçš„å­å¼¹ç¢°æ’žæ£€æµ‹
 			b = enemy_pool.bulletList.get(i);
 			if(player.isCollision(b)) {
 				if(!god_time){
@@ -350,7 +350,7 @@ public class GameSurfaceView extends SurfaceView implements Runnable,SurfaceHold
 				break;
 			}
 		}
-		for(int i = 0; i < giftArray.size(); i++)	{ //playerÓëenemyµÄ×Óµ¯Åö×²¼ì²â
+		for(int i = 0; i < giftArray.size(); i++)	{ //playerä¸Ženemyçš„å­å¼¹ç¢°æ’žæ£€æµ‹
 			g = giftArray.get(i);
 			if(player.isCollision(g)) {
 				giftArray.remove(g);
@@ -419,7 +419,7 @@ public class GameSurfaceView extends SurfaceView implements Runnable,SurfaceHold
 		}
 	}
 
-	public void greatBomb(){ //´óÕÐ
+	public void greatBomb(){ //å¤§æ‹›
 		for(int i=0; i<enemyArray.size(); i++){
 			Enemy enemy = enemyArray.get(i);
 			bombArray.add(new Bomb(bomb_bmp,56,39,enemy.getX(),enemy.getY()));
@@ -590,7 +590,7 @@ public class GameSurfaceView extends SurfaceView implements Runnable,SurfaceHold
 			case 35:
 				greatBomb();
 				break;
-			case 66: //Enter¼ü
+			case 66: //Enteré”®
 				if(game_state == GAME_OVER){
 					life = 4;
 					this.init();

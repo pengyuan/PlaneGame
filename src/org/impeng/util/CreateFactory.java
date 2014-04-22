@@ -15,7 +15,7 @@ public class CreateFactory {
 	public static Bitmap createBitmap(Context ctx,int id){
 		bmp = BitmapFactory.decodeResource(ctx.getResources(),id);
 		if(bmp == null){
-			System.out.println("´´½¨Bitmap¶ÔÏóÊ§°Ü");
+			System.out.println("åˆ›å»ºBitmapå¯¹è±¡å¤±è´¥");
 		}
 		return bmp;			
 	}
@@ -23,7 +23,7 @@ public class CreateFactory {
 	public static Bitmap createBitmap(Bitmap bmp,int px,int py,int w,int h){
 		bmp = Bitmap.createBitmap(bmp, px, py, w, h);
 		if(bmp == null){
-			System.out.println("´´½¨Bitmap¶ÔÏóÊ§°Ü");
+			System.out.println("åˆ›å»ºBitmapå¯¹è±¡å¤±è´¥");
 		}
 		return bmp;
 	}
